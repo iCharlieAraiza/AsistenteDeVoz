@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Virtual</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body id="main">
+    <main>
+        <p class="about-label"><span class="about-span">Acerca de</span></p>
+        <div class="contaner">
+            <div class="wrapper">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="¿Qué deseas?">
+                    <button id="start">
+                        <img src="img/wave.png" alt="" class="wave">
+                    </button>
+                </div>
+
+                <button id="configBtn">
+                    <img src="/img/settings.png" alt="" srcset="">
+                </button>
+            </div>
+            <section>
+                <div class="texts">
+                </div>
+            </section>
+        </div>
+
+        <section class="config-form hide-form" id="configForm">
+            <div class="config-container">
+                <button id="closeBtn" class="close-btn">
+                    X
+                </button>
+                <div class="form">
+                <h1>Configuración</h1>
+                <p>Ciudad de origen: </p>
+                <input type="text" id="cityInput" placeholder="Ejemplo: Ciudad de México">
+                <p>Canciones elegidas</p>
+                <select id="cancion_1" name="cancion_1" class="cancion-select">
+                    <option value="c_1">Cancion 1</option>
+                    <option value="c_2">Cancion 2</option>
+                    <option value="c_3">Cancion 3</option>
+                    <option value="c_4">Cancion 4</option>
+                </select>
+
+                <select id="cancion_2" name="cancion_2" class="cancion-select">
+                    <option value="c_1">Cancion 1</option>
+                    <option value="c_2">Cancion 2</option>
+                    <option value="c_3">Cancion 3</option>
+                    <option value="c_4">Cancion 4</option>
+                </select>
+
+                <select id="cancion_3" name="cancion_3" class="cancion-select">
+                    <option value="c_1">Cancion 1</option>
+                    <option value="c_2">Cancion 2</option>
+                    <option value="c_3">Cancion 3</option>
+                    <option value="c_4">Cancion 4</option>
+                </select>
+                
+                <div class="button-container">
+                    <input id="saveBtn" type="button" value="Guardar">
+                    <div class="lds-ellipsis" id="loader" style="display:none;"><div></div><div></div><div></div><div></div></div>
+                    <div id="confirm-save-label">Se han guardado la configuración</div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+
+
+        <section id="recomendForm" class="recomended-songs-form hide-form">
+            <div class="container">
+                <button id="closeBtn2" class="close-btn">
+                    X
+                </button>
+                <h1>Recomendación de Canciones <span>v.a.0.1</span></h1>
+                <div class="form-rs">
+                    <input type="text" name="" id="songInput">
+                    <button id="searchBtn">
+                        <img src="/img/search.png" alt="" srcset="">
+                    </button>
+                </div>
+                <div class="results">
+                    <div class="card-recomendations">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+<script src="main.js"></script>
+<script src="asistente.js"></script>
+<script src="recommended.js"></script>
+
+</body>
+</html>

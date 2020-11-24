@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    color: #333333;
+    font-weight: 100;
+    
+}
+
+.config-container p{
+    color: #5a5a59;
+    font-weight: 400;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+.wrapper{
+    padding-top: 24vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper{
+    display: flex;
+    width: 650px;
+    border-radius: 26px;
+    overflow: hidden;
+    border: #ababab 1px solid;
+    box-shadow: 0 8px 6px -6px #b1b1b1;
+}
+
+.search-wrapper input{
+    padding: 0 30px;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.search-wrapper button{
+    border: none;
+    padding: 0 15px;
+    background-color: #d2d2d2;
+}
+
+.search-wrapper button:hover{
+    border: none;
+    padding: 0 15px;
+    background-color: #b1b1b1;
+}
+
+.wave{
+    width: 44px;
+    border: none;
+}
+
+.config-form{
+    position: absolute;
+    top: 0px;
+    width: 100%; 
+    height: 100vh;
+    background-color: rgb(255 255 255 / 90%);
+    transition: ease-in-out 0.5s all;
+    visibility: visible;
+    opacity: 100%;
+}
+
+.config-container{
+    max-width: 600px;
+    margin:60px auto;
+}
+
+.form h1{
+    font-size: 30px;
+    color: #333333;
+    font-weight: 100;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+}
+
+#cityInput{
+    padding: 6px 10px 12px 10px;
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+}
+
+.cancion-select{
+    border-radius: 5px;
+    padding: 6px;
+    width: 300px;
+    border: 1px solid #868686;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    margin-top: 1rem;
+}
+
+.button-container input{
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #929292;
+    cursor: pointer;
+}
+
+.button-container input:hover{
+    background-color: #b6b6b6;
+}
+
+.close-btn{
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: #565656;
+    font-weight: 300;
+}
+
+
+#configBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#configBtn img{
+    width: 40px;
+    opacity: 0.7;
+}
+
+#configBtn img:hover{
+    width: 40px;
+    opacity:1
+}
+
+.active-record{
+    background-color: #e96969 !important;
+}
+
+#confirm-save-label{
+    display: none;
+    font-size: 12px;
+    color: #444444;
+    margin-left: 10px;
+}
+
+.about-label{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.about-span{
+    cursor: pointer;
+}
+
+.about-span:hover{
+    border-bottom: 2px dotted gray;
+}
+
+
+.texts p {
+    margin-top: 2rem;
+    color: black;
+    text-align: left;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+.texts p.replay {
+    text-align: right;
+}
+
+.texts{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.form-rs{
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: #a5a5a5 solid 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 10px 6px 5px 0px rgb(185 185 185 / 37%)
+}
+
+.form-rs input{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+}
+
+.card-recomendations{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.card-recomendations h3{
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.card-recomendations h4{
+    font-weight: 400;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.number-list{
+    float: left;
+    font-size: 18px;
+    padding-right: 8px;
+    font-weight: 400;
+}
+
+.card-recomendations .card{
+    border-bottom: 1px solid #cecece;
+}
+
+.off{
+    background-color: rgb(0, 0, 0);
+}
+
+.recomended-songs-form{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: #e9ece7;
+    transition: ease-in-out 0.5s all;
+    visibility: visible;
+    opacity: 100%;
+}
+
+.recomended-songs-form h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 36px;
+}
+
+.recomended-songs-form span{
+    font-size: 16px;
+}
+
+#searchBtn{
+    border: none;
+    padding: 0 1rem;
+}
+
+#searchBtn img{
+    width: 16px;
+}
+
+#closeBtn2{
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: 100;
+    border: #ccc7c7 1px solid;
+    background-color: transparent;
+}
+
+#closeBtn2:hover{
+    background-color: slategrey;
+    color: #fff;
+}
+
+
+.hide-form{
+    opacity: 0;
+    visibility: hidden;
+
+}
