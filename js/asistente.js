@@ -114,23 +114,10 @@ if (e.results[0].isFinal) {
     }
 
     if(text.toLowerCase().includes("recomienda canciones")){
-        const p = document.createElement("p");
-        p.classList.add("replay");
-        let response = text.toLowerCase();
-        let result = "";
-        const regex = /recomienda canciones como/gi;
-
-        responses = response.replace(regex, '');
-
-        result=encodeURIComponent(responses.trim());
-
-        getSong(result,(song)=>{
-            p.innerText = 
-            texts.appendChild(p);
-        })
-
-
-
+        const form2 = document.getElementById("recomendForm");
+        if(form2.classList.contains("hide-form")){
+            form2.classList.remove("hide-form");
+        }
     }
 
 
@@ -176,24 +163,6 @@ function getSimilarArtist(name, callBack){
     );
 }
 
-
-function getSong(name, callBack){
-    let song = "";
-    const regex = /de/gi;
-    song = name.replace(regex, '');
-
-    song = encodeURIComponent(song.trim());
-
-    let selectSong = "";
-    fetch('https://ws.audioscrobbler.com/2.0/?method=track.search&track='+song+'&api_key=acb4fd5cb7e7a2d2fb948eaa7bfd873c&format=json')
-    .then(response => response.json())
-    .then(data => {
-            selectSong = data.results.trackmatches.track[0].name;
-            console.log(artista);
-
-        }   
-    );
-}
 
 //http://ws.audioscrobbler.com/2.0/?method=track.search&track=In+my+memory+tiesto&api_key=acb4fd5cb7e7a2d2fb948eaa7bfd873c&format=json
 
