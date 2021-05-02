@@ -2,4 +2,5 @@
 
 Asistente de voz hecho con tecnologías web para la asignatura de algoritmos.
 
-FIx components
+- [ ] Fix components
+- [ ] Add new components
